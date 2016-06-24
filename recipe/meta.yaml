@@ -6,7 +6,7 @@ package:
 
 source:
   fn: u3d-v{{ version }}.zip
-  url: https://github.com/svn2github/MathGL/archive/9aae144.zip
+  url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
   md5: 545ff4c21a6bdb919b6d2b4764298416
 
 build:
