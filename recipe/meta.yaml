@@ -7,7 +7,7 @@ package:
 source:
   fn: u3d-v{{ version }}.zip
   url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
-  md5: 545ff4c21a6bdb919b6d2b4764298416
+  md5: a0fa627b60c7d4c7a178541819e560c2
 
 build:
   features:
