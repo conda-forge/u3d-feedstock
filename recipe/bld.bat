@@ -1,5 +1,7 @@
 set BUILD_CONFIG=Release
 
+cd u3d
+
 mkdir build
 cd build
 

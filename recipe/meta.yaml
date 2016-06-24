@@ -5,29 +5,28 @@ package:
   version: {{ version }}
 
 source:
-  fn: u3d-v{{ version }}.tar.gz
-  url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
-  md5: a0fa627b60c7d4c7a178541819e560c2
+  fn: u3d-v{{ version }}.zip
+  url: https://github.com/svn2github/MathGL/archive/9aae144.zip
+  md5: 545ff4c21a6bdb919b6d2b4764298416
 
 build:
   features:
   - vc9  # [win and py27]
   - vc10  # [win and py34]
   - vc14  # [win and py35]
-  number: 0
-  skip: true  # [win]
+  number: 1
 
 requirements:
   build:
   - python  # [win]
-  - cmake
-  - jpeg
-  - libpng
-  - zlib
+  - cmake  # [not win]
+  - jpeg  # [not win]
+  - libpng  # [not win]
+  - zlib  # [not win]
   run:
-  - jpeg
-  - libpng
-  - zlib
+  - jpeg  # [not win]
+  - libpng  # [not win]
+  - zlib  # [not win]
 
 test:
   requires:
