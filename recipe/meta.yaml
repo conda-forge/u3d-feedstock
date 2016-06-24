@@ -19,7 +19,7 @@ build:
 requirements:
   build:
   - python  # [win]
-  - cmake  # [not win]
+  - cmake
   - jpeg  # [not win]
   - libpng  # [not win]
   - zlib  # [not win]
