@@ -6,7 +6,7 @@ cd u3d
 mkdir build
 cd build
 
-cmake .. \
+cmake .. -G "Unix Makefiles" \
     -DCMAKE_BUILD_TYPE=$BUILD_CONFIG \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DU3D_SHARED:BOOL=TRUE
