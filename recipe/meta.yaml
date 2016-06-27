@@ -5,14 +5,9 @@ package:
   version: {{ version }}
 
 source:
-  #fn: u3d-v{{ version }}.tar.gz
-  #url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
-  #md5: ad9d51d0cb22bcb51dd17e1f9b5d7a0c
-  
-  # temporarily working with master since there seems to be a bug in the sources
-  # build kick 1
-  fn: u3d-master.tar.gz
-  url: https://github.com/ClinicalGraphics/u3d/archive/master.tar.gz
+  fn: u3d-v{{ version }}.tar.gz
+  url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
+  md5: 9ed46d04e80a2995abd597ebfb5f788f
 
 build:
   features:
