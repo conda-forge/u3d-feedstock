@@ -14,19 +14,19 @@ build:
   - vc9  # [win and py27]
   - vc10  # [win and py34]
   - vc14  # [win and py35]
-  number: 0
+  number: 1
 
 requirements:
   build:
   - python  # [win]
   - cmake
-  - jpeg
-  - libpng
-  - zlib
+  - jpeg 9*
+  - libpng >=1.6.28,<1.7
+  - zlib 1.2.*
   run:
-  - jpeg
-  - libpng
-  - zlib
+  - jpeg 9*
+  - libpng >=1.6.28,<1.7
+  - zlib 1.2.*
 
 test:
   requires:
