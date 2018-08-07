@@ -10,23 +10,21 @@ source:
   md5: 9ed46d04e80a2995abd597ebfb5f788f
 
 build:
-  features:
-  - vc9  # [win and py27]
-  - vc10  # [win and py34]
-  - vc14  # [win and py35]
-  number: 1
+  number: 2
 
 requirements:
   build:
-  - python  # [win]
   - cmake
-  - jpeg 9*
-  - libpng >=1.6.28,<1.7
-  - zlib 1.2.*
+  - {{ compiler('c') }}
+  - {{ compiler('cxx') }}
+  host:
+  - jpeg
+  - libpng
+  - zlib
   run:
-  - jpeg 9*
-  - libpng >=1.6.28,<1.7
-  - zlib 1.2.*
+  - jpeg
+  - libpng
+  - zlib
 
 test:
   requires:
@@ -42,7 +40,7 @@ about:
   home: https://github.com/ClinicalGraphics/u3d
   license: Apache-2.0
   summary: Universal 3D Sample Software
-  
+
 extra:
   recipe-maintainers:
     - ivoflipse
