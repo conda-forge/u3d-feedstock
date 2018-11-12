@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.3.4" %}
 
 package:
   name: u3d
@@ -7,14 +7,14 @@ package:
 source:
   fn: u3d-v{{ version }}.tar.gz
   url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
-  md5: 9ed46d04e80a2995abd597ebfb5f788f
+  md5: 415a7255fb033959af1cccf9713e9b7e
 
 build:
   features:
   - vc9  # [win and py27]
   - vc10  # [win and py34]
   - vc14  # [win and py35]
-  number: 1
+  number: 0
 
 requirements:
   build:
