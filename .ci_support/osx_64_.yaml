@@ -4,7 +4,13 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
+jpeg:
+- '9'
+libpng:
+- '1.6'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
 - osx-64
+zlib:
+- '1.2'
