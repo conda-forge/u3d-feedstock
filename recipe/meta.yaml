@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
-  md5: 6f6e17de3413c2232a96f40df63afb42
+  md5: 9f3f63422e0efa772b8bf5a774061170
 
 build:
   number: 1
