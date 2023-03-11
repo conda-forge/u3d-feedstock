@@ -5,32 +5,23 @@ package:
   version: {{ version }}
 
 source:
-  fn: u3d-v{{ version }}.tar.gz
   url: https://github.com/ClinicalGraphics/u3d/archive/{{ version }}.tar.gz
   md5: 6f6e17de3413c2232a96f40df63afb42
 
 build:
-  features:
-  - vc9  # [win and py27]
-  - vc10  # [win and py34]
-  - vc14  # [win and py35]
   number: 1
 
 requirements:
   build:
   - python  # [win]
   - cmake
-  - jpeg 9*
-  - libpng >=1.6.28,<1.7
-  - zlib 1.2.*
-  run:
-  - jpeg 9*
-  - libpng >=1.6.28,<1.7
-  - zlib 1.2.*
+  - make  # [unix]
+  host:
+  - jpeg
+  - libpng
+  - zlib
 
 test:
-  requires:
-  - python {{ environ['PY_VER'] + '*' }}  # [win]
   commands:
   # generate a test.idtf file. this tool never exit code 0 so we force it
   - IDTFGen || true  # [not win]
