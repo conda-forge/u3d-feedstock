@@ -32,6 +32,8 @@ test:
 about:
   home: https://github.com/ClinicalGraphics/u3d
   license: Apache-2.0
+  license_family: Apache
+  license_file: COPYING
   summary: Universal 3D Sample Software
   
 extra:
