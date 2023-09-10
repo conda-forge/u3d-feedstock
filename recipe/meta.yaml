@@ -9,7 +9,7 @@ source:
   md5: 9f3f63422e0efa772b8bf5a774061170
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -18,7 +18,7 @@ requirements:
   - cmake
   - make  # [unix]
   host:
-  - jpeg
+  - libjpeg-turbo
   - libpng
   - zlib
 
